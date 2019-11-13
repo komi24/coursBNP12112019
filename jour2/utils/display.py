@@ -42,4 +42,5 @@ def display_cars(positions):
                 line.append('.')
         print("".join(line))
 
-display_cars([[2,4],[5,2],[1,6]])
+if __name__ == "__main__":
+    display_cars([[2,4],[5,2],[1,6]])
