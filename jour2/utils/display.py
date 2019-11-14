@@ -26,17 +26,17 @@ def display_car(position):
                 line.append('.')
         print("".join(line))
     
-def is_car(position_to_test, list_position):
-    for pos in list_position:
-        if position_to_test == pos:
+def is_car(position_to_test, list_cars):
+    for car in list_cars:
+        if position_to_test == car["position"]:
             return True
     return False
     
-def display_cars(positions):
+def display_cars(list_cars):
     for i in range(10):
         line = []
         for j in range(10):
-            if is_car([i,j], positions):
+            if is_car([i,j], list_cars):
                 line.append('x')
             else:
                 line.append('.')
